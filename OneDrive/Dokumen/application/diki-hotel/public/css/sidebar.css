@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #6c757d;
+}
+
+.sidebar {
+    background-color: #444;
+    color: #fff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease-in;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 8px;
+}
+
+.nav_link {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff; /* Warna teks */
+    text-decoration: none;
+    /* background-color: #6c757d; Warna latar belakang menggunakan kelas btn-secondary */
+    transition: background-color 0.3s ease;
+}
+
+.nav_link:hover {
+    background-color: #495057; /* Warna latar belakang saat di-hover */
+    /* Anda juga dapat mengubah warna teks saat di-hover jika diinginkan */
+}
+
+.active {
+    left: 0;
+}
+
+.main-content {
+    padding: 20px;
+    transition: margin-left 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+/* Semua kode CSS sebelumnya */
+
+/* Semua kode CSS sebelumnya */
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.sidebar_logo {
+    text-align: center;
+    line-height: 60px; /* Sesuaikan dengan tinggi sidebar */
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Warna teks logo */
+    margin-bottom: 10px; /* Sesuaikan jarak antara logo dan tautan navbar */
+    position: relative;
+}
+
+/* Aturan CSS untuk garis di bawah logo */
+.sidebar_logo_line {
+    border: none;
+    border-bottom: 1px solid #ddd; 
+    margin: 10px 0;
+}
+
+/* Efek hover pada header_toggle */
+.header_toggle:hover {
+    cursor: pointer;
+    /* Tambahkan aturan lain untuk efek visual jika diinginkan */
+}
+
+.header {
+    height: 70px; /* Sesuaikan dengan tinggi yang diinginkan */
+    display: flex;
+    justify-content: space-between; /* Tambahkan ini untuk menempatkan nama user di sebelah kanan */
+    align-items: center; /* Untuk mengalign vertical */
+    /* background-color: #6c757d; Warna latar belakang menggunakan kelas btn-secondary */
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan header */
+}
+
+/* Aturan CSS untuk memperbesar ukuran header_toggle */
+.header_toggle {
+    font-size: 24px; /* Sesuaikan dengan ukuran yang diinginkan */
+    color: #fff; /* Warna teks */
+}
+
+.header_user {
+    font-size: 16px; /* Sesuaikan ukuran teks */
+    font-weight: bold; /* Sesuaikan ketebalan teks */
+    color: #fff; /* Warna teks nama pengguna */
+}
+
+.header_toggle:hover {
+    cursor: pointer;
+    /* Tambahkan aturan lain untuk efek visual jika diinginkan */
+}
+
+/* Efek hover pada tautan navbar */
+.nav_link:hover {
+    background-color: #f0f0f0; /* Ubah warna latar belakang sesuai dengan keinginan */
+    color: #000; /* Ubah warna teks sesuai dengan keinginan */
+    /* Tambahkan aturan lain untuk efek visual jika diinginkan */
+}
+
+/* CSS sebelumnya */
+
+/* Aturan CSS untuk footer sidebar */
+.sidebar_footer {
+    position: absolute;
+    bottom: 20px; /* Sesuaikan jarak dari bawah */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Aturan CSS untuk tautan Logout */
+.logout_link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #dc3545; /* Warna latar belakang untuk tautan Logout */
+    color: #fff; /* Warna teks untuk tautan Logout */
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.logout_link:hover {
+    background-color: #c82333; /* Warna latar belakang saat di-hover */
+    /* Anda juga dapat mengubah warna teks saat di-hover jika diinginkan */
+}
+
+/* CSS sebelumnya */
+
+/* Aturan CSS untuk sidebar_links */
+.sidebar_links {
+    /* Tempatkan tautan navigasi di atas sidebar */
+    margin-bottom: 20px; /* Sesuaikan jarak dari bawah */
+}
+
+/* Aturan CSS untuk tautan navigasi di sidebar */
+.sidebar_links .nav_link {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c757d;
+    transition: background-color 0.3s ease;
+    margin-bottom: 8px; /* Tambahkan jarak antara tautan navbar */
+}
+
+.sidebar_links .nav_link:hover {
+    background-color: #495057;
+}
+
+/* Aturan CSS untuk footer sidebar */
+.sidebar_footer {
+    position: absolute;
+    bottom: 20px; /* Sesuaikan jarak dari bawah */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Aturan CSS untuk tautan Logout */
+.logout_link {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+
+.sidebar {
+    /* CSS sebelumnya */
+    padding-right: 20px; /* Tambahkan jarak di sebelah kanan */
+}
+
+/* Aturan CSS untuk tombol Close */
+.close_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #6c757d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    
+    right: 15px;
+    margin-top: 20px;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 250px; /* Sesuaikan lebar sidebar yang Anda gunakan */
+    transition: margin-left 0.3s; /* Tambahkan efek transisi untuk tampilan yang lebih halus */
+}
+
+
+
+
+
+
