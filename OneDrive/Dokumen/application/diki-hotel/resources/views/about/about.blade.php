@@ -45,9 +45,7 @@
         </aside>
         <main class="main-content">
             <h1>Halaman Tentang Hotel!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor ligula eget nisl dapibus, eu
-                varius
-                eros interdum.</p>
+            <p> Jadi ini hari rabu</p>
         </main>
 
         <script>
